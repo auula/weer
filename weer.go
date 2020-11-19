@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/higker/weer/pkg/config"
 )
 
 const (
@@ -25,6 +27,7 @@ var (
 func main() {
 	fmt.Println(Banner)
 	fmt.Println(AppVer)
+	fmt.Println(config.ServiceApiUrl)
 	fmt.Println("Weer is weather command line apps.")
 	req, err := http.NewRequest("GET", "https://wttr.in", nil)
 	req.Header.Add("Content-Type", `text/plain`)
