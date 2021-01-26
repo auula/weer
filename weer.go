@@ -29,13 +29,5 @@ func main() {
 	fmt.Println(AppVer)
 	fmt.Println(config.ServiceApiUrl)
 	fmt.Println("Weer is weather command line apps.")
-	req, err := http.NewRequest("GET", "https://wttr.in", nil)
-	req.Header.Add("Content-Type", `text/plain`)
-	resp, err := client.Do(req)
-	body, err := ioutil.ReadAll(resp.Body)
-	defer resp.Body.Close()
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println(string(body))
+	
 }
