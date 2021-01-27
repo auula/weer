@@ -1,6 +1,6 @@
 # weer
 Weer is weather command line  apps🌞.
-
+正在持续更新中..
 ```shell
 Weather report: Heiwajima, Japan
 
